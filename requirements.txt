@@ -1,5 +1,5 @@
 python-dotenv
-pillow
+Pillow==9.4.0
 numpy
 streamlit
 keras
