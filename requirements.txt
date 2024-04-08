@@ -1,0 +1,7 @@
+python-dotenv
+tensorflow
+pillow
+numpy
+streamlit
+keras
+opencv-python
