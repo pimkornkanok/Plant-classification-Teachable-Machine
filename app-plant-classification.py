@@ -22,6 +22,7 @@ if input_img is not None and st.button('Classify'):
     
     # Replace this with the path to your image
     image = Image.open(input_img).convert("RGB")
+    st.image(image, caption="Uploaded Image", width=300)
     
     # resizing the image to be at least 224x224 and then cropping from the center
     size = (224, 224)
@@ -46,8 +47,6 @@ if input_img is not None and st.button('Classify'):
     labels = [line.strip() for line in open('labels.txt', 'r').readlines()]
 
     # Display predictions
-
-    
     prob = round(prediction[0,0] * 100, 2)
     st.write(f"Predicted Class: {classes[0]}, Confidence Score: {prob}%")
   
