@@ -59,6 +59,10 @@ if input_img is not None and st.button('Classify'):
     prob = round(prediction[0,3] * 100, 2)
     st.write(f"Predicted Class: {classes[3]}, Confidence Score: {prob}%")
 
+    prob = round(prediction[0,4] * 100, 2)
+    st.write(f"Predicted Class: {classes[4]}, Confidence Score: {prob}%")
+    
+
 
 st.balloons()
 
