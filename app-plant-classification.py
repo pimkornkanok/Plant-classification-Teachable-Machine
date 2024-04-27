@@ -14,7 +14,7 @@ model = load_model("keras_model.h5", compile=False)
 st.title("Plant Classification App")
 
 # Prepare the input image
-input_img = st.file_uploader("Please upload an image to predict", type=['jpeg', 'jpg', 'png'])
+input_img = st.file_uploader("Please upload an image to predict (สามารถอัปโหลดได้แค่รูปภาพของพืชสมุนไพร ขมิ้นชัน พลูคาว ฟ้าทะลายโจร หูเสือ และเหงือกปลาหมอ)", type=['jpeg', 'jpg', 'png'])
 
 if input_img is not None and st.button('Classify'):
     # Create the array of the right shape to feed into the Keras model
